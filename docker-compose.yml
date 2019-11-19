@@ -1,0 +1,9 @@
+version: "3"
+services:
+  jupyter-lab:
+    image: sboursault/jupyter-lab-custom:latest 
+    volumes:
+      - /home/seb/git/data-lab/work:/home/jovyan/work:rw
+    ports:
+      - 8888:8888
+    container_name: jupyter-lab
